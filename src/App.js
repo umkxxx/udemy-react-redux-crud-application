@@ -1,7 +1,16 @@
+import React from 'react'
+
 function App() {
   return (
-    <div><h1>hellow world!</h1></div>
+    <h1>hello world!</h1>
   );
 }
+// function App() {
+//   return React.createElement(
+//     "div",
+//     null,
+//     "hoge"
+//   );
+// }
 
 export default App;
