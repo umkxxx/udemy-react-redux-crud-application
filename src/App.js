@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
 const App = () => {
   // return (
@@ -8,9 +9,9 @@ const App = () => {
   //   </React.Fragment>
   // );
   const hogehgoe = [
-    {name:"TARO", age:"24"},
-    {name:"JIRO", age:"21"},
-    {name:"SABURO"}
+    {name:"TARO", age:24},
+    {name:"JIRO", age:21},
+    {name:"SABURO", age:3}
   ]
   return (
     <React.Fragment>
@@ -29,8 +30,9 @@ function User(props) {
     </React.Fragment>
   );
 }
-User.defaultProps = {
-  age:3
+User.propTypes = {
+  name: PropTypes.string,
+  age: PropTypes.number.isRequired
 }
 
 export default App;
